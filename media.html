@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yung Baby Tate</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/lightbox.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" />
+
+</head>
+
+<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
+<script src="./assets/javascripts/lodash.js"></script>
+<script src="./assets/javascripts/mobile-menu.js"></script>
+<script src="./assets/javascripts/lightbox.min.js"></script>
+<script src="./assets/javascripts/myscript.js"></script>
+
+<body>
+
+<p></p>
+<div class="main">
+  <div class="container-fluid" align="right">
+      <div id="navbar">
+
+          <a href="index.html" class="nav-link-active">Home</a>
+
+          <a href="about.html" class="nav-link-active">Bio</a>
+
+          <a href="discography.html" class="nav-link-active">Discography</a>
+
+          <a href="media.html" class="nav-link-active">Media</a>
+
+            <a href="merch.html" class="nav-link-active">Store</a>
+
+          <a href="tour-dates.html" class="nav-link-active">Tour Dates</a>
+
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/images/media/img-1-thumbnail.jpg" width="150px" height="150px"
+    onclick="javascript:openModal(); currentSlide(1);" class="hover-shadow cursor"/>
+  </div>
+  <div class="column">
+    <img src="/assets/images/media/img-2-thumbnail.jpg" width="150px" height="150px"
+    onclick="openModal();currentSlide(2)" class="hover-shadow"></img>
+  </div>
+  <div class="column">
+    <img src="/assets/images/media/img-3-thumbnail.jpg" width="150px" height="150px"
+    onclick="openModal();currentSlide(3)" class="hover-shadow"></img>
+  </div>
+  <div class="column">
+    <img src="/assets/images/media/img-4-thumbnail.jpg" width="150px" height="150px"
+    onclick="openModal();currentSlide(4)" class="hover-shadow"></img>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/images/media/img-5-thumbnail.jpg" width="150px" height="150px"
+        onclick="openModal(); currentSlide(1);" class="hover-shadow"></img>
+  </div>
+  <div class="column">
+    <img src="/assets/images/media/img-6-thumbnail.jpg" width="150px" height="150px"
+    onclick="openModal();currentSlide(2)" class="hover-shadow"></img>
+  </div>
+  <div class="column">
+    <img src="/assets/images/media/img-7-thumbnail.jpg" width="150px" height="150px"
+    onclick="openModal();currentSlide(3)" class="hover-shadow"></img>
+  </div>
+  <div class="column">
+    <img src="/assets/images/media/img-8-thumbnail.jpg" width="150px" height="150px"
+    onclick="openModal();currentSlide(4)" class="hover-shadow"></img>
+  </div>
+</div>
+
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+
+      <header class="header">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+      </header>
+      <div class="mySlides">
+        <div class="numbertext"> 1/8 </div>
+          <img src="/assets/images/media/img-1-full.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"> 2/8 </div>
+        <img src="/assets/images/media/img-2-full.jpg"
+            style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"> 3/8 </div>
+        <img src="/assets/images/media/img-3-full.jpg"
+            style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"> 4/8 </div>
+        <img src="/assets/images/media/img-4-full.jpg"
+            style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  </div>
+</div>
+
+<div class="ybt-media">
+  <h3>Videos</h3>
+  <table>
+</div>
+
+<footer class="footer">
+  <div class="social-media">
+        <p class="copyright">© YUNG BABY TATE 2019</p>
+    <div class="social">
+      <a href="https://twitter.com/yungbabytate"><img src="/assets/images/social-media-icons-twitter.png"></img></a>
+      <a href="https://soundcloud.com/yungbabytate"><img src="/assets/images/social-media-icons-soundcloud.png"></img></a>
+      <a href="https://open.spotify.com/artist/3IJ21966TwNZI24MwZHMu4?si=5WY63nSMSAWM6uLqVVB2Sw"><img src="/assets/images/social-media-icons-spotify.png"></img></a>
+      <a href="https://www.instagram.com/yungbabytate/"><img src="/assets/images/social-media-icons-instagram.png"></img></a>
+      <a href="https://www.facebook.com/yungbabytate/"><img src="/assets/images/social-media-icons-facebook.png"></img></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
